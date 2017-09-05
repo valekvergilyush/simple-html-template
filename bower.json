@@ -1,0 +1,25 @@
+{
+  "name": "tcs-cinema",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "valek vergilyush"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "build/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "slick-carousel": "^1.6.0",
+    "jquery.localScroll": "^1.4.0",
+    "bootstrap": "^3.3.7",
+    "modernizr": "^3.5.0"
+  }
+}

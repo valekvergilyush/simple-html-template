@@ -1,0 +1,48 @@
+@mixin font-face($fontname,$fontweight){
+  @font-face {
+    font-family: $fontname;
+    src: url('../fonts/' + $fontname + '.eot');
+    src: url('../fonts/' + $fontname + '.eot??#iefix') format('embedded-opentype'),
+    url('../fonts/' + $fontname + '.woff') format('woff'),
+    url('../fonts/' + $fontname + '.ttf') format('truetype');
+    font-weight: $fontweight;
+    font-style: normal;
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($p1,$p2,$p3,$p4,$color){
+  -webkit-box-shadow: $p1 + px $p2 + px $p3 + px $p4 + px $color;
+  -moz-box-shadow: $p1 + px $p2 + px $p3 + px $p4 + px $color;
+  box-shadow: $p1 + px $p2 + px $p3 + px $p4 + px $color;
+}
+
+@mixin transition($prop, $time) {
+  -webkit-transition: $prop $time;
+  -moz-transition: $prop $time;
+  -ms-transition: $prop $time;
+  -o-transition: $prop $time;
+  transition: $prop $time;
+}
+
+@mixin bi($center: true){
+  background-size: cover;
+  background-repeat: no-repeat;
+  @if $center{
+    background-position: center;
+  }
+}
+
+@mixin shadow{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
